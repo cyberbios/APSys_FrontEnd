@@ -1,20 +1,49 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-    <ul class="navbar-nav">
+  <a class="navbar-brand" href="#">
+      <img src="/assets/logo_da_empresa_wh1.png" width="50" height="50" alt="Espaço Saúde">
+    </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler03" aria-controls="navbarTogglerDemo02"
+    aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+
+  <div class="collapse navbar-collapse" id="navbarToggler01">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown link
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
+        <a class="nav-link dropdown-toggle" href="#" id="navbarRegistersDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Cadastros
+            </a>
+        <div class="dropdown-menu" aria-labelledby="navbarRegistersDropdown">
+          <a class="dropdown-item" routerLink="/users">Usuários</a>
+          <a class="dropdown-item" routerLink="/profiles">Perfis do sistema</a>
+          <a class="dropdown-item" routerLink="/modalities">Modalidades</a>
+          <a class="dropdown-item" routerLink="/teachers">Professores</a>
+          <a class="dropdown-item" routerLink="/plans">Planos</a>
+          <a class="dropdown-item" routerLink="/payType">Tipos de pagamento</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarAgendaDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Agenda
+            </a>
+        <div class="dropdown-menu" aria-labelledby="navbarAgendaDropdown">
+          <a class="dropdown-item" routerLink="/userAgenda">Agendamento de aulas</a>
+          <a class="dropdown-item" routerLink="/classAgenda">Agenda do aluno</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarFinancesDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Financeiro
+            </a>
+        <div class="dropdown-menu" aria-labelledby="navbarFinancesDropdown">
+          <a class="dropdown-item" routerLink="/classAgenda">Contratos</a>
         </div>
       </li>
     </ul>
+    <p class="navbar-text">
+      Usuário anônimo
+    </p>
   </div>
 </nav>
